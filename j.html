@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>j.</title>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <style>
+       body{
+        font-family: 'Times New Roman', Times, serif;
+       }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+            height: 50px;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h6{
+            float: left;
+            margin: 7px;
+            font-size: 15px;
+        }
+        i{
+            margin: 5px;
+            font-size: 15px;
+            
+        }
+        #d{
+            font-size: 50px;
+            text-align: center;
+        }
+        .arrival{
+            float: left;
+            list-style: none;
+            padding-top: 50px;
+            padding-left: 35px;
+            margin-bottom: 20px;
+        }
+        #syn{
+            /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+            font-family: alpha slab one;
+            font-size: 20px;
+        }
+        #cast{
+            color:rgb(181, 181, 22) ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #new{
+            color: red;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .boy {
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin: 5px;
+            list-style: none;
+        }
+        .boy:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .section2{
+            width: 1265px;
+            height: 700px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: bisque;
+        }
+        #three{
+            height: 530px;
+        }
+       
+        .box{
+            width: 300px;
+            height: 800px;
+            margin-top: 20px;
+        }
+        .section{
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+         #two{
+            background-color: white;
+        }
+        h2{
+            padding-top: 10px;
+        }
+        p{
+            padding-top: 10px;
+        }
+        #text{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #wid{
+           background-color: white;
+           height: 400px;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        h3:hover{
+            color: lightslategray;
+        }
+        #high{
+            margin-top: 80px;
+        }
+        .video{
+            margin-top: 80px;  
+        }
+        #j{
+            margin-bottom: 50px;
+        }
+         .form {
+            width: 950px;
+            height: 360px;
+            border: 2px solid black;
+            background-color: black;
+            margin: 100px 0 0 150px;
+        }
+
+        .form h2 {
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .form p {
+            color: white;
+            text-align: center;
+        }
+        .form input {
+            width: 170px;
+            height: 30px;
+            border: 1px solid white;
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+
+        .form button {
+            width: 100px;
+            height: 40px;
+            margin-left: 20px;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+
+  .help {
+            width: 950px;
+            height: 360px;
+            margin: 100px 0 0 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .need {
+            width: 250px;
+            height: 200px;
+        }
+
+        #big {
+            width: 420px;
+        }
+
+        #small {
+            width: 350px;
+        }
+
+        .need p {
+            color: black;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .need h5 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .need h5:hover {
+            background-color: none;
+        }
+       
+        .icons i {
+            width: 30px;
+            height: 30px;
+            font-size: 25px;
+            margin-left: 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .icons i:hover {
+            transform: scale(1.1s);
+            color: white;
+        }
+
+        .icons i:hover:nth-child(1) {
+            background-color: blue;
+        }
+
+        .icons i:hover:nth-child(2) {
+            background-color: lightblue;
+        }
+
+        .icons i:hover:nth-child(3) {
+            background-color: red;
+        }
+
+        .icons i:hover:nth-child(4) {
+            background-color: darkblue;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header2" id="to">
+            <h6>WELCOME TO J.</h6>
+            <h6> SIGN IN </h6>
+            <h6>TRACJING INFO</h6>
+            <h6>CORPORTAE INQUIRY</h6>
+            <h6> CREATE ACCOUNT</h6>
+        </div>
+        <div class="header2">
+          <i class="fa-solid fa-cart-plus"></i>
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </div>
+    </div>
+    <h3 id="d">J.</h3>
+    <div class="navbar">
+        <ul>
+            <li class="arrival">NEW ARRIVAL</li>
+            <li class="arrival" id="syn">SYNCC</li>
+            <li class="arrival" id="cast">Cast & Crew</li>
+            <li class="arrival" id="new">FEATURED COLLECTION</li>
+            <li class="arrival">WOMEN</li>
+            <li class="arrival">MEN</li>
+            <li class="arrival">BOYS & GIRLS</li>
+            <li class="arrival">FRAGRANCE</li>
+            <li class="arrival">MAKEUP</li>
+            <li class="arrival">SKINCARE</li>
+        </ul>
+    </div>
+    <video src="https://www.junaidjamshed.com/media/weltpixel/owlcarouselslider/videos/harmonic-retreat-web.mp4"
+        width="1265" autoplay muted="autoplay"> </video>
+    <div class="container">
+        <div class="item">
+            <h1>Shop For New Arrival</h1>
+        </div>
+        <div class="item" id="off">
+            <ul>
+                <li class="boy">Women</li>
+                <li class="boy" >Men</li>
+                <li class="boy">Boys & Girls</li>
+                <li class="boy">Fragrance</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h1>Featured Collection</h1>
+        <div class="section2">
+            <div class="box">
+                <a href="j2.html">
+                    <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-16.jpg" width="300" height="500" alt="">
+                     </a>
+                    <h2>Unstitched Collection</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum eligendi distinctio modi fuga incidunt explicabo provident delectus repellendus debitis!</p>
+               
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-18.jpg" width="300" height="500" alt="">
+                 <h2>Men's Festive Collection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum eligendi distinctio modi fuga incidunt explicabo provident delectus repellendus debitis!</p>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-17.jpg" width="300" height="500" alt="">
+                 <h2>Stitched Collection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum eligendi distinctio modi fuga incidunt explicabo provident delectus repellendus debitis!</p>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/feature_4_.jpg" width="300" height="500" alt="">
+                 <h2>Naerang</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum eligendi distinctio modi fuga incidunt explicabo provident delectus repellendus debitis!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="three">
+        <h1 id="text">Watch and Buy!</h1>
+        <div class="section2" id="two">
+            <div class="box">
+               <video src="https://whatmore-brand-video-assets-720p.b-cdn.net/jj_STRDV9JQR3C/1080p_68c5cb48-769c-4294-b45d-25980e432520.mp4" width="300" height="500" muted autoplay="auotplay"></video>
+            </div>
+            <div class="box">
+                <video src="https://whatmore-brand-video-assets-720p.b-cdn.net/jj_STRDV9JQR3C/1080p_59fb6ca2-e1c5-400b-9abc-553b9754cbb2.mp4" width="300" height="500" muted autoplay="auotplay"></video>
+            </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="section" id="high">
+        <h1>Shop By Women Category</h1>
+        <div class="section2" id="wid">
+            <div class="box">
+              <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-1.jpg" width="270" height="350" alt="">
+              <h3>Unstitched</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-2.jpg" width="270" height="350" alt="">
+               <h3>Stitched</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-3.jpg" width="270" height="350" alt="">
+               <h3>Kurti</h3>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-22.jpg" width="270" height="350" alt="">
+                <h3>Trousers</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="section"  id="high">
+        <h1>Shop By Men Category</h1>
+        <div class="section2" id="wid">
+            <div class="box">
+              <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-6.jpg" width="270" height="350" alt="">
+              <h3>Kameez Shalwar</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-7.jpg" width="270" height="350" alt="">
+               <h3>Kurta</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-6.jpg" width="270" height="350" alt="">
+               <h3>Wiascoat</h3>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-7.jpg" width="270" height="350" alt="">
+                <h3>Grooms Sherwani</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div class="section" id="high">
+        <h1>Shop By Fragrance & Cosmetics</h1>
+        <div class="section2" id="wid">
+            <div class="box">
+              <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-5.jpg" width="270" height="350" alt="">
+              <h3>Men Fragrance</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-11.jpg" width="270" height="350" alt="">
+               <h3>Women Fragrance</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-10.jpg" width="270" height="350" alt="">
+               <h3>Cosmetics</h3>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/jj-theme-8.jpg" width="270" height="350" alt="">
+                <h3>Skin Care</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="section" id="high">
+        <h1>Shop By Boys & Girls Category</h1>
+        <div class="section2" id="wid">
+            <div class="box">
+              <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-12.jpg" width="270" height="350" alt="">
+              <h3>Teen Girls </h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-9.jpg" width="270" height="350" alt="">
+               <h3>Teen Boys</h3>
+            </div>
+            <div class="box">
+               <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-10.jpg" width="270" height="350" alt="">
+               <h3>Kids Girls</h3>
+            </div>
+            <div class="box">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/vol3-11.jpg" width="270" height="350" alt="">
+                <h3>Kids Boys</h3>
+            </div>
+        </div>
+    </div>
+
+
+<div class="video">
+    <h1 id="j"> Explore J. Skin Care</h1>
+    <div class="video1">
+        <video src="https://www.junaidjamshed.com/media/weltpixel/owlcarouselslider/videos/skincare_web.mp4"  width="1265" autoplay muted="autoplay"></video>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="form">
+        <h2>BE THE FIRST</h2>
+        <p>New arrivals. Exclusive previews. First access to <br>
+            <span>sales. Sign up to stay in the know.</span>
+        </p>
+        <input type="text" placeholder="Enter your Email Address">
+        <span>
+            <button>SIGN UP</button>
+        </span>
+    </div>
+
+
+
+
+
+
+
+    <div class="help">
+        <div class="need" id="big">
+            <h5>NEED HELP ?</h5>
+            <p>
+                +92 21 111 112 111 <br>
+                <span>(Mon - Sat: 9:30am - 7:30pm | Sun: 11am - 5pm)</span>
+            <div class="flex">
+                <img src="https://t3.ftcdn.net/jpg/08/02/97/94/360_F_802979491_rNs1GHCZhjGesMyqKGf5LECLJCp29LkW.jpg"
+                    width="40" height="40" alt=""><span>eshop@junaidjamshed.com</span>
+            </div>
+        </div>
+        <div class="need" id="small">
+            <h5>CUSTOMER SERVICE</h5>
+            <span> Contact Us</span>
+            <br>
+            <span>Delivery & Orders</span>
+            <br>
+            <span> Returns & Exchanges</span>
+            <br>
+            <span> Terms & Conditions</span>
+            <br>
+            <span> Privacy Policy</span>
+            <br>
+            <span> Track My Order</span>
+            <br>
+            <span> Payment Guid</span>
+        </div>
+        <div class="need">
+            <h5>COMPANY</h5>
+            <span>About Us</span>
+            <br>
+            <span> Careers</span>
+            <br>
+            <span> Store Addresses</span>
+            <br>
+            <span>giftkarte</span>
+        </div>
+        <div class="need">
+            <h5>FOLLOWS US</h5>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

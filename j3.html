@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j3</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h6 {
+            float: left;
+            margin: 7px;
+            font-size: 15px;
+        }
+
+        i {
+            margin: 5px;
+            font-size: 15px;
+
+        }
+
+        #d {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .arrival {
+            float: left;
+            list-style: none;
+            padding-top: 50px;
+            padding-left: 35px;
+            margin-bottom: 20px;
+        }
+
+        #syn {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #cast {
+            color: rgb(181, 181, 22);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #new {
+            color: red;
+        }
+
+        .section {
+            width: 100%;
+            height: 900px;
+            margin-top: 150px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
+
+        .item {
+            width: 300px;
+            height: 2000px;
+        }
+
+        select {
+            width: 250px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            border-bottom: 2px solid black;
+        }
+
+        select :hover {
+            width: 290px;
+            height: 30px;
+            border: 3px solid lightblue;
+        }
+
+        hr {
+            width: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .p {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+
+        #di {
+            width: 1000px;
+            gap: 20px;
+            display: flex;
+        }
+
+
+        .item1 {
+            position: relative;
+            border-radius: 10px;
+            background-color: white;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item1 img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .item1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .item1:hover img {
+            transform: scale(1.1);
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .price {
+            color: black;
+            font-size: 25px;
+            margin: 5px 0;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .add {
+            display: inline-block;
+            border: 2px solid black;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            color: black;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .add:hover {
+            background-color: black;
+            color: white;
+        }
+
+        button:hover {
+            border: 3px solid black;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="header2" id="to">
+            <h6>WELCOME TO J.</h6>
+            <h6> SIGN IN </h6>
+            <h6>TRACJING INFO</h6>
+            <h6>CORPORTAE INQUIRY</h6>
+            <h6> CREATE ACCOUNT</h6>
+        </div>
+        <div class="header2">
+            <i class="fa-solid fa-cart-plus"></i>
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+        </div>
+    </div>
+    <h3 id="d">J.</h3>
+    <div class="navbar">
+        <ul>
+            <li class="arrival">NEW ARRIVAL</li>
+            <li class="arrival" id="syn">SYNCC</li>
+            <li class="arrival" id="cast">Cast & Crew</li>
+            <li class="arrival" id="new">FEATURED COLLECTION</li>
+            <li class="arrival">WOMEN</li>
+            <li class="arrival">MEN</li>
+            <li class="arrival">BOYS & GIRLS</li>
+            <li class="arrival">FRAGRANCE</li>
+            <li class="arrival">MAKEUP</li>
+            <li class="arrival">SKINCARE</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="item">
+            <h2>Shopping Options</h2>
+            <hr>
+            <select>
+                <option value="">Fabrics</option>
+                <option value="">lawn (123)</option>
+                <option value="">Cambric (3)</option>
+                <option value="">Dobby (10)</option>
+                <option value="">Chiffon(8)</option>
+                <option value="">Jacquard(4)</option>
+            </select>
+            <select>
+                <option value="">Styling</option>
+                <option value="">Embroidered (74)</option>
+                <option value="">Printed (28)</option>
+                <option value="">Digital Printed (14)</option>
+                <option value="">Schiffli(8)</option>
+                <option value="">Paste Printed(20)</option>
+                <option value="">Dyed Jacquard(4)</option>
+            </select>
+            <select>
+                <option value="">Color Family</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <select>
+                <option value="">Season</option>
+                <option value="">Festive Collection (128)</option>
+
+            </select>
+            <select>
+                <option value="">Product Category</option>
+                <option value="">Unstitiched 1 Piece (6)</option>
+                <option value="">Unstitched 2 Piece -shirt and Trouser (3)</option>
+                <option value="">Unstitched 2 Piece -shirt and Dupata (19)</option>
+                <option value="">Unstitched 3 piece(20)</option>
+            </select>
+            <select>
+                <option value="">Size</option>
+                <option class="p">1p</option>
+                <option class="p">2p</option>
+                <option class="p">3p</option>
+            </select>
+
+        </div>
+        <div class="item" id="di">
+            <div class="item1">
+                <a href="j4.html"><img src="https://www.junaidjamshed.com/media/catalog/product/j/d/jds-25-1111_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                </a>
+                <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                <div class="price"> PKR 2,617.50</div>
+                <a href="" class="add"> ADD TO BAG</a>
+
+                <div class="item1">
+                    <a><img src="https://www.junaidjamshed.com/media/catalog/product/2/5/25-3260_5_-_copy_3.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                            width="900" height="300" alt="">
+                    </a>
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price"> PKR 2,617.50</div>
+                    <a href="" class="add"> ADD TO BAG</a>
+                </div>
+
+
+                <div class="item1">
+                    <a><img src="https://www.junaidjamshed.com/media/catalog/product/1/1/1106_3_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                            width="900" height="300" alt="">
+                    </a>
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price"> PKR 2,617.50</div>
+                    <a href="" class="add"> ADD TO BAG</a>
+                </div>
+
+
+                <div class="item1">
+                    <a><img src="https://www.junaidjamshed.com/media/catalog/product/j/d/jds-25-1105_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                            width="900" height="300" alt="">
+                    </a>
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price"> PKR 2,617.50</div>
+                    <a href="" class="add"> ADD TO BAG</a>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="item1">
+                <img src="https://www.junaidjamshed.com/media/catalog/product/2/5/25-3257_3_-_copy_3.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                    width="900" height="300" alt="">
+                <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                <div class="price">PKR 2,617.50 </div>
+                <a href="Education.html" class="add">ADD TO BAG</a>
+
+
+
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/2/5/25-1114_6_a.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50 </div>
+                    <a href="Education.html" class="add">ADD TO BAG</a>
+                </div>
+
+
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/1/1/1113_2_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50</div>
+                    <a href="Education.html" class="add">ADD TO BAG</a>
+                </div>
+
+
+
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/1/1/1112_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50</div>
+                    <a href="Education.html" class="add">ADD TO BAG</a>
+                </div>
+            </div>
+ 
+
+
+
+            <div class="item1">
+                <img src="https://www.junaidjamshed.com/media/catalog/product/j/s/jst-25-2075_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                    width="900" height="300" alt="">
+                <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                <div class="price">PKR 2,617.50 </div>
+                <a href="" class="add">ADD TO BAG</a>
+
+
+
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/s/jst-25-2074_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50 </div>
+                    <a href="" class="add">ADD TO BAG</a>
+                </div>
+
+
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/s/jst-25-2072_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50</div>
+                    <a href="" class="add">ADD TO BAG</a>
+                </div>
+                <div class="item1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/2/5/25-1103_5_a.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755&dpr=2"
+                        width="900" height="300" alt="">
+                    <div class="name">MULTI LAWN PRINTED UNSTITCHED 2PC</div>
+                    <div class="price">PKR 2,617.50</div>
+                    <a href="" class="add">ADD TO BAG</a>
+                </div>
+
+            </div>
+        </div>
+
+| </div>
+
+
+
+
+      
+</body>
+
+</html>
